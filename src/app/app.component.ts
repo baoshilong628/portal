@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CusBtnComponent} from "@dream_light_color/cus-btn";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portal';
+  switchValue = false
 }

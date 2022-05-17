@@ -10,6 +10,8 @@ MIT
 @angular/router
 MIT
 
+@dream_light_color/cus-btn
+
 rxjs
 Apache-2.0
                                Apache License
