@@ -9,20 +9,9 @@ import {mergeMap, of, zip} from "rxjs";
 })
 export class AppComponent implements OnInit{
   constructor(
-    private httpClient: HttpClient,
   ) {
   }
   switchValue = false
   ngOnInit() {
-    of(new Date().getTime())
-      .pipe(
-        mergeMap(date => zip(
-          this.httpClient.get('/index.html?v='+date),
-          this.httpClient.get('/main.js?v='+date),
-          this.httpClient.get('/polyfills.js?v='+date),
-          this.httpClient.get('/runtime.js?v='+date),
-          this.httpClient.get('/style.css?v='+date)
-        ))
-      ).subscribe(_ => location.reload())
   }
 }
