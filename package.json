@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-hashing none --base-href /dream-light-color/",
+    "build": "ng build --base-href /dream-light-color/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
