@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CusBtnModule} from "@dream_light_color/cus-btn";
+import {APP_BASE_HREF} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,12 @@ import {CusBtnModule} from "@dream_light_color/cus-btn";
     AppRoutingModule,
     CusBtnModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_BASE_HREF,
+      useValue: '/dream-light-color'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
