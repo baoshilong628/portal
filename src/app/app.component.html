@@ -1,6 +1,15 @@
 <header>
   <p>dlc note：一个个人笔记网站</p>
 </header>
+<button (click)="login()">
+  登录
+</button>
+<input type="text" [(ngModel)]="loginValue">
+输入a <input type="number" [(ngModel)]="a">
+输入b <input type="number" [(ngModel)]="b">
+<button (click)="callAdd()">登录后调用函数</button>
+结果是 <span>{{res}}</span>
+<p>登录状态 {{loginState? '已登录':'未登录'}}</p>
 <p style="user-select: none">
   this is my first custom component : <lib-cus-btn [(value)]="switchValue"></lib-cus-btn>  click it and you will see the change of {{switchValue?'apple':'banana'}}
 </p>
