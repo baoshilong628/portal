@@ -31,4 +31,8 @@ export class AppComponent implements OnInit{
     if (this.loginState === null) return
     this.cloudBaseService.add(this.a,this.b).subscribe( res => this.res = res)
   }
+
+  sayHi() {
+    alert("hi")
+  }
 }

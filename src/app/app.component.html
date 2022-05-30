@@ -11,5 +11,10 @@
 结果是 <span>{{res}}</span>
 <p>登录状态 {{loginState? '已登录':'未登录'}}</p>
 <p style="user-select: none">
-  this is my first custom component : <lib-cus-btn [(value)]="switchValue"></lib-cus-btn>  click it and you will see the change of {{switchValue?'apple':'banana'}}
+  this is my first custom component : <dlc-switch [(value)]="switchValue"></dlc-switch>  click it and you will see the change of {{switchValue?'apple':'banana'}}
 </p>
+
+<p>
+  这是一个按钮组件 <dlc-button (click)="sayHi()">我是按钮</dlc-button>
+</p>
+<p>组件来自库@dream_light_color/ng-dlc 正在构建中</p>

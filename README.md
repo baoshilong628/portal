@@ -2,4 +2,6 @@
 
 基于Angular构建，基于netify服务的静态博客网站
 
-网址 dreamlightcolor.com
+正在构建中
+
+网址 dlcnote.com
