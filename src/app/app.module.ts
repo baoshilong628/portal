@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import {DlcSwitchModule} from "@dream_light_color/ng-dlc/switch";
-import {DlcButtonModule} from "@dream_light_color/ng-dlc/button";
+import {DlcSwitchModule, DlcTagModule, DlcButtonModule, DlcCardModule} from "@dream_light_color/ng-dlc";
 
 @NgModule({
   declarations: [
@@ -18,7 +17,9 @@ import {DlcButtonModule} from "@dream_light_color/ng-dlc/button";
     AppRoutingModule,
     FormsModule,
     DlcSwitchModule,
-    DlcButtonModule
+    DlcButtonModule,
+    DlcTagModule,
+    DlcCardModule
   ],
   providers: [
   ],

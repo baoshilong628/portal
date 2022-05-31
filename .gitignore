@@ -5,6 +5,8 @@
 /out-tsc
 /bazel-out
 /dist
+.angular
+package-lock.json
 
 # Node
 /node_modules
