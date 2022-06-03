@@ -1,0 +1,11 @@
+<div class="item blog-list">
+  <dlc-card (click)="this.router.navigate(['note',blogInfo.url])" *ngFor="let blogInfo of blogInfoList" [title]="blogInfo.title" [tags]="blogInfo.tags">
+    {{blogInfo.description}}
+  </dlc-card>
+</div>
+<div class="item info">
+  <div class="version">
+    <h2>v0.0.1</h2>
+    <p>更改首页格式</p>
+  </div>
+</div>

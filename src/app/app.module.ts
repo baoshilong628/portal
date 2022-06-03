@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {DlcSwitchModule, DlcTagModule, DlcButtonModule, DlcCardModule} from "@dream_light_color/ng-dlc";
+import { IndexComponent } from './index/index.component';
+import {AppNoteModule} from "./note/note.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,8 @@ import {DlcSwitchModule, DlcTagModule, DlcButtonModule, DlcCardModule} from "@dr
     DlcSwitchModule,
     DlcButtonModule,
     DlcTagModule,
-    DlcCardModule
+    DlcCardModule,
+    AppNoteModule
   ],
   providers: [
   ],

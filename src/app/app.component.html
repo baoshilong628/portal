@@ -1,27 +1,7 @@
 <header>
-  <p>dlc note：一个个人笔记网站</p>
+  dlc note  梦轻华的博客
 </header>
-<dlc-button (click)="login()">
-  登录
-</dlc-button>
-<input type="text" [(ngModel)]="loginValue">
-输入a <input type="number" [(ngModel)]="a">
-输入b <input type="number" [(ngModel)]="b">
-<dlc-button (click)="callAdd()">登录后调用函数</dlc-button>
-结果是 <span>{{res}}</span>
-<p>登录状态 {{loginState? '已登录':'未登录'}}</p>
-<p style="user-select: none">
-  this is my first custom component : <dlc-switch [(value)]="switchValue"></dlc-switch>  click it and you will see the change of {{switchValue?'apple':'banana'}}
-</p>
-
-<p>
-  这是一个按钮组件 <dlc-button (click)="sayHi()">我是按钮</dlc-button>
-</p>
-<p>
-  这是一个标签组件 <dlc-tag>原创</dlc-tag>
-</p>
-<dlc-card title="你好世界" [tags]="['原创','人文','地理']">
-  世界是美好的，世界是伟大的。
-  这是一个卡片组件
-</dlc-card>
-<p>组件来自库@dream_light_color/ng-dlc 正在构建中</p>
+<router-outlet></router-outlet>
+<footer>
+  Hello world！
+</footer>
